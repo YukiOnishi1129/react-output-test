@@ -12,10 +12,12 @@ import styles from "./style.module.css";
  */
 export const InputForm = (props) => {
   /* props */
-  const { inputValue, placeholder, handleChangeValue, handleKeyDown } = props;
+  const { role, inputValue, placeholder, handleChangeValue, handleKeyDown } =
+    props;
 
   return (
     <input
+      role={role}
       className={styles.input}
       type="text"
       placeholder={placeholder}

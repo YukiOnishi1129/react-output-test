@@ -40,6 +40,7 @@ export const TodoTemplate = () => {
       {/* Todo検索フォームエリア */}
       <section className={styles.common}>
         <InputForm
+          role={"search-todo-input-form"}
           inputValue={searchKeyword}
           placeholder={"Search Keyword"}
           handleChangeValue={handleChangeSearchKeyword}

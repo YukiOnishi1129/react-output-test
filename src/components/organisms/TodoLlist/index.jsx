@@ -20,11 +20,14 @@ export const TodoList = (props) => {
   return (
     <ul className={styles.list}>
       {todoList.map((todo) => (
-        <li key={todo.id} className={styles.todo}>
-          <span className={styles.task}>{todo.title}</span>
+        <li key={todo.id} role={`todo-list-${todo.id}`} className={styles.todo}>
+          <span role={`todo-list-name-${todo.id}`} className={styles.task}>
+            {todo.title}
+          </span>
           <div className={styles.far}>
             {/* https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react-ja */}
             <FontAwesomeIcon
+              role={"delete-todo-button"}
               icon={faTrashAlt}
               size="lg"
               onClick={() => handleDeleteTodo(todo.id, todo.title)}

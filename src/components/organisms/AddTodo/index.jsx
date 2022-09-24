@@ -19,6 +19,7 @@ export const AddTodo = (props) => {
     <>
       <h2 className={styles.subTitle}>{"ADD TODO"}</h2>
       <InputForm
+        role={"add-todo-input-form"}
         inputValue={addInputValue}
         placeholder={"New Todo"}
         handleChangeValue={onChangeTodo}

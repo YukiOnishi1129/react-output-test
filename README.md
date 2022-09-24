@@ -39,6 +39,11 @@ yarn dev
 ### 1-3. テストの実行
 
 ```
+npm run test
+
+または
+
+yarn test
 ```
 
 ## 2. アプリケーションの仕様
