@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/react-output-test/",
   test: {
     global: true,
-    environment: "happy-dom",
+    environment: "jsdom",
     setupFiles: "src/setup.js",
   },
 });

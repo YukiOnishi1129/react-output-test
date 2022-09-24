@@ -24,14 +24,13 @@ export const TodoList = (props) => {
           <span role={`todo-list-name-${todo.id}`} className={styles.task}>
             {todo.title}
           </span>
-          <div className={styles.far}>
+          <div
+            role={`delete-todo-button-${todo.id}`}
+            className={styles.far}
+            onClick={() => handleDeleteTodo(todo.id, todo.title)}
+          >
             {/* https://www.digitalocean.com/community/tutorials/how-to-use-font-awesome-5-with-react-ja */}
-            <FontAwesomeIcon
-              role={"delete-todo-button"}
-              icon={faTrashAlt}
-              size="lg"
-              onClick={() => handleDeleteTodo(todo.id, todo.title)}
-            />
+            <FontAwesomeIcon icon={faTrashAlt} size="lg" />
           </div>
         </li>
       ))}
