@@ -1,6 +1,6 @@
 import { describe, expect, test, beforeEach, vi } from "vitest";
 import { renderHook, act } from "@testing-library/react";
-import { useTodo } from "./useTodo";
+import { useTodo } from "./useTodo.js";
 import { INIT_TODO_LIST } from "../constants/data";
 
 describe("Hooksテスト】useApp test", () => {
